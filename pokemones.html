@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <link rel="icon" href="Images/ico.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <nav class="h-[80px] bg-black flex justify-between items-center px-[15px]">
+        <a href="index.html"><img class="h-[60px]" src="Images/logo.svg" alt=""> </a>
+        <ul class="hidden sm:flex justify-center py-[10px] gap-[35px] text-white sm:text-sm	lg:text-lg	">
+            <li class="sm:hover:scale-110 sm:hover:text-yellow-400"><a href="index.html">Inicio</a></li>
+            <li class="sm:hover:scale-110 sm:hover:text-yellow-400"><a href="buscarpokemon.html">Buscar Pokemon</a></li>
+            <li class="sm:hover:scale-110 sm:hover:text-yellow-400"><a href="#contacto">Contacto</a></li>
+        </ul>
+
+        <label class="sm:hidden" for="btn-menu">  
+            <input class="hidden peer/menu" type="checkbox" id="btn-menu">
+                <img class="w-[50px] sm:hidden" src="images/menu.png" alt="">
+                <div class="hidden w-full h-[60px] bg-white absolute top-[80px] left-0 peer-checked/menu:block" id="menu-general">
+                    <ul class="flex justify-center py-[10px] gap-[35px]">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="buscarpokemon.html">Buscar Pokemon</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+             </label>    
+    </nav>
+    <main id="main" class="flex flex-col justify-center items-center flex-wrap bg-[#FBDF33]">
+        <h1 class="pokemon text-2xl">Selecciona un pokemon y conocse sus habilidades</h1>      
+        <div class="grid grid-rows-2 grid-cols-2 xl:grid-rows-6 xl:grid-cols-6 lg:grid-rows-5 lg:grid-cols-5 md:grid-rows-4 md:grid-cols-4 sm:grid-rows-3 sm:grid-cols-3 place-items-center" id="divimagenes"></div>
+    </main>
+    
+
+    <script src="pokemones.js"></script>
+
+    
+</body>
+</html>

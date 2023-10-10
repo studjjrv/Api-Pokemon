@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Pokemon';
+    src: url('font/Pokemon\ Solid.ttf');
+}
+
+.pokemon{
+    font-family: 'Pokemon', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    padding: 0px 20px;
+    /*opacity: 0.8;*/
+
+}
+
+
+
